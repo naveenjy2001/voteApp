@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	{% load static %} 
+	<link rel="stylesheet" type="text/css" href="{% static 'styleindex2.css' %}">
+</head>
+<body>
+	<h1 class="logo"></h1>
+	<div class= "class1">
+		<h1>Student Voting Portal</h1>
+		{% for message in messages %}
+		<h6>{{message}}</h6>
+		{% endfor %}
+		
+		<form action="castvote" method="POST">
+			{% csrf_token %}
+			<label  for="username">Username :</label>
+			<input type="username" class="input_box" placeholder="Enter Email Id" name="username">
+			<br><br>
+			<label  for="password">Password :</label>
+			<input type="password" class="input_box" placeholder="Enter Password" name="password">
+			<br><br>
+			<button type="submit" class="button">Sign In</button>
+			<br><br>
+
+			<hr>
+			<p>Forgot Password ?<br> <a class="fpassword" href="https://academia.srmist.edu.in/reset">Click Here</a></p>
+
+		</form>
+	</div>
+	<div>
+		
+
+	</div>
+	<div class="class2">
+		<p>Any Help Or Queries <br>Contact: 123456789 <br> Mail: helpdesk@srmist.edu.in
+		</p>
+
+
+	</div>
+
+
+</body>
+</html>

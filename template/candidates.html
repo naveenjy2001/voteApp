@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    {% load static %} 
+    <link rel="stylesheet" type="text/css" href="{% static 'stylecandidates.css' %}">
+    
+</head>
+<body>
+    <div>
+    	<h2 class="h1">Candidates</h2>
+        <hr>
+    </div>
+
+    	
+	<div id="body">
+		<ul>
+            {% for cand in candidates %}
+			<li>
+				<a><img src="{{cand.img.url}}" alt=""></a>
+				<b>{{cand.name}}</b>
+				<p>MAIL: {{cand.mail}}<br>REG NO: {{cand.reg_no}}<br>Year: {{cand.year_of_study}}<br>Course and Dept: {{cand.course_and_dept}}<br>...</p>
+			</li>
+            {% endfor %}
+		</ul>
+	</div>
+</body>
+</html>

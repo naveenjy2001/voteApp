@@ -1,0 +1,44 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(img1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: cursive;
+	text-align: center;
+	background-size: cover;
+}
+.d1
+{
+	border-color: darkblue;
+	border-radius: 10px;
+	transform: translate(100%,40%);
+	background-color:  rgb(175, 224, 255);
+	border: 4px solid darkblue;
+	border-style: double;
+	width: 500px;
+	height: 310px;
+
+}
+.textbox
+{
+	border-radius: 10px;
+
+}
+.h1
+{
+	background-color: rgb(175, 224, 255);
+	padding: 20px;
+}
+.button
+{
+	border: 2px solid rgba(43, 79, 47, 1);
+	border-radius: 5px;
+	background-color: rgba(0, 185, 63, 1);
+	display: inline-block;
+	padding: 8px 30px;
+	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+}

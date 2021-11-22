@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vote</title>
+  {% load static %} 
+	<link rel="stylesheet" type="text/css" href="{% static 'stylevotepagefinal1.css' %}">
+</head>
+<body>
+
+	<nav>
+		<label class="srm">SRM Election</label><br>
+		<ul>
+		<li><a href="update">Updates</a></li>
+		<li><a href="candidates">Candidates</a></li>
+		<li><a href="logout">Logout {{user.first_name}}</a></li>
+		<li><a href="contact">Contact Us</a></li>
+		<li><a href="feedback">Feedback</a></li>
+	</nav>
+	<div>
+		<form action="submitvote" method="POST">
+      {% csrf_token %}
+			<h1>Cast Your Vote Here</h1>
+			<label for="voter">Voter's Email: </label>
+    <select id="voter" class="input_box2" name="voter">
+      <option>{{user.email}}</option> 
+	</select>
+	  <br><br>
+    <label for="reg_no">Registration Number </label><br>
+    <input type="text" id="reg_no" class="input_box1" name="reg_no" placeholder="Enter Reg_no">
+    <br><br>
+    <label for="selection">Select Candidate</label><br>
+    <select id="selection" class="input_box3" name="selection">
+      {% for cand in candidates %}
+      <option>{{cand.name}}</option>  
+      {% endfor %}    
+    </select>
+    <br><br>
+  	
+    <button type="submit" class="button" >Cast Vote</button>
+  </form>
+	</div>
+
+</body>
+</html>

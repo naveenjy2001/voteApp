@@ -1,0 +1,22 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(img1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: cursive;
+	text-align: center;
+	background-size: cover;
+}
+.h1
+{
+	background-color: skyblue;
+	padding: 20px;
+}
+.p
+{
+	background-color: silver;
+	padding: 5px;
+	
+}

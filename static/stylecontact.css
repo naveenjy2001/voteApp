@@ -1,0 +1,32 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(img1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: cursive;
+	text-align: center;
+	background-size: cover;
+}
+.f1
+{
+	color: darkblue;
+	background-color: rgb(175, 224, 255);
+	width: 300px;
+	border-radius: 5px;
+	border-color: darkblue;
+	border-style: double;
+	padding: 50px 50px 50px 50px;
+	transform: translate(130%,70%);
+}
+.d1
+{
+	color: gray;
+	transform: translate(0%,390%);
+}
+.h1
+{
+	background-color: skyblue;
+	padding: 20px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates</title>
+    {% load static %} 
+    <link rel="stylesheet" type="text/css" href={% static 'styleupdates.css' %}>
+    
+</head>
+<body>
+    <div>
+    	<h2 class="h1">News Updates</h2>
+        <hr><hr>
+        {% for n in upd %}
+        <p class="p">
+            <option>{{n.news_update}}</option><hr>  
+        </p>
+        {% endfor %}
+    </div>
+</body>
+</html>
